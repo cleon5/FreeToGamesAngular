@@ -1,0 +1,16 @@
+<div>
+    <app-navbar></app-navbar>
+
+    <div class="ListaGamesTitulo">
+        <h1>Lista de juegos</h1> 
+    </div>
+
+    <div class="list">
+        <ul class="listaGames">
+            <li *ngFor="let game of Games" class="gameItem" [routerLink]="['/game/'+game.id]">
+                <img src="{{game.thumbnail}}"  alt="">
+                <h3 class="titleGame">{{game.title}}</h3>
+            </li>
+        </ul>
+    </div>
+</div>

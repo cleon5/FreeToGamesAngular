@@ -1,0 +1,18 @@
+.list {
+  width: 100%;
+}
+.ListaGamesTitulo{
+    margin: 50px auto;
+    text-align: center;
+}
+.listaGames {
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 30vw 30vw 30vw;
+
+  list-style: none;
+}
+.gameItem {
+    margin-bottom: 10px;
+  width: 30vw;
+}
