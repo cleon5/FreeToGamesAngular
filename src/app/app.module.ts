@@ -8,6 +8,8 @@ import { HomeComponent } from './home/home.component';
 import { GameComponent } from './game/game.component';
 import { ListGamesComponent } from './list-games/list-games.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { SliderJuegosComponent } from './slider-juegos/slider-juegos.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { NavbarComponent } from './navbar/navbar.component';
     HomeComponent,
     GameComponent,
     ListGamesComponent,
-    NavbarComponent
+    NavbarComponent,
+    SliderJuegosComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

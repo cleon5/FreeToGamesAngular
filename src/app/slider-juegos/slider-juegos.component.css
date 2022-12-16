@@ -1,0 +1,36 @@
+.scrollmenu {
+  background-color: #333;
+  overflow: auto;
+  white-space: nowrap;
+  margin: 15px 20px;
+}
+
+.scrollmenu div {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 1px;
+  text-decoration: none;
+  
+}
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #2b2d53 #374649;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #273133;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #12132b;
+    border-radius: 10px;
+    border: 2px outset #0c0b0b;
+  }

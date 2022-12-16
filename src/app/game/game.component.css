@@ -1,0 +1,48 @@
+.container {
+  width: 100%;
+}
+.titleGame {
+  margin: 1.2vw 1vw;
+}
+.imgPrincipal {
+  width: 100%;
+}
+.gameInformation {
+  display: flex;
+  width: 100%;
+}
+.info {
+  width: 60vw;
+}
+.data {
+    margin-top: 20vw;
+  width: 25vw;
+}
+
+.screenshots {
+  margin: 0 auto;
+  width: 60vw;
+}
+.imgScrenshots {
+  width: 59vw;
+  margin: 10px auto;
+}
+.description {
+  margin: 0.5vw 2vw;
+}
+
+/*Requerimientos*/
+.requerimientos {
+  width: 100%;
+}
+.requerimiento {
+  display: flex;
+  margin: .5vw 0;
+}
+.requerimiento > span{
+  width: 50%;
+  
+}
+.requerimiento > .dato {
+  text-align: right;
+}

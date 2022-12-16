@@ -1,0 +1,10 @@
+<div class="Slider">
+    <div class="scrollmenu">
+        <div *ngFor="let game of Games" (click)="gotoGame(game.id)">
+            
+            <img src="{{game.thumbnail}}" alt="">
+        </div>
+        
+    </div>
+
+</div>
