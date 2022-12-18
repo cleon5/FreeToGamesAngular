@@ -1,7 +1,7 @@
 <div>
     <app-navbar></app-navbar>
 
-    <div class="container">
+    <div class="containerGame">
         <div class="titleGame">
             <h1>{{Game.title}}</h1>
 
@@ -34,30 +34,48 @@
                     </button>
                 </div>
 
-                <p class="description">{{Game.description}}</p>
+                <hr class="hr">
+                <h4 class="h4Text">Acerca del juego</h4>
 
-                
-                <div class="JuegosSimilares">
-                    <app-slider-juegos></app-slider-juegos>
-                </div>
+                <p class="description">{{Game.description}}</p>
 
             </div>
 
             <div class="data">
                 <img class="imgPrincipal" src="{{Game.thumbnail}}" alt="">
-
-                <p>{{Game.developer}}</p>
-                <p>{{Game.genre}}</p>
-                <p>Platform: <br>
-                     {{Game.platform}}
-                    </p>
-                <p>{{Game.release_date}}</p>
-                <p>{{Game.status}}</p>
-
-                
-                <hr>
+                <hr class="hr">
                 <div>
-                    <p>Requerimients</p>
+                    <p class="titleRequerimient">Information</p>
+
+                    <div class="requerimientos">
+                        <div class="requerimiento">
+                            <span>Developer </span>
+                            <span class="dato">{{Game.developer}}</span>
+                        </div>
+                        <div class="requerimiento">
+                            <span>Genre: </span>
+                            <span class="dato">{{Game.genre}}</span>
+                        </div>
+                        <div class="requerimiento">
+                            <span>Plataform:</span>
+                            <span class="dato">{{Game.platform}}</span>
+                        </div>
+                        <div class="requerimiento">
+                            <span>Release date: </span>
+                            <span class="dato">{{Game.release_date}}</span>
+                        </div>
+                        <div class="requerimiento">
+                            <span>Status: </span>
+                            <span class="dato">{{Game.status}}</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <hr class="hr">
+                <div>
+                    <p class="titleRequerimient">Requerimients</p>
 
                     <div class="requerimientos">
                         <div class="requerimiento">
@@ -83,11 +101,18 @@
 
                     </div>
 
+                </div>
             </div>
+
         </div>
 
+
+
+
     </div>
-
+    <div>
+        <hr class="hr">
+        <h4 class="h4Text">Juegos similares</h4>
+        <app-slider-juegos></app-slider-juegos>
+    </div>
     <app-footer></app-footer>
-
-</div>

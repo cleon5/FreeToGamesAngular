@@ -1,0 +1,51 @@
+footer {
+  background-color: rgb(18,18,18);
+}
+.links {
+  display: flex;
+  justify-content: center;
+  margin-top: 4vw;
+}
+.lista {
+  display: flex;
+  width: 50%;
+  justify-content: space-evenly;
+  list-style: none;
+  justify-items: center;
+  /*padding: 25px 0;*/
+  margin: 20px auto;
+}
+hr {
+  margin: 0 5vh;
+  height: 3px;
+  color: rgb(104, 104, 104);
+  border-radius: 3px;
+}
+.lista a {
+  color: beige;
+  font-size: 3vh;
+  text-decoration: none;
+}
+.company {
+  color: beige;
+  padding: 20px 0;
+  text-align: center;
+  justify-content: center;
+  font-size: 3vh;
+}
+@media screen and (max-width: 875px) {
+    .lista {
+        display: flex;
+        width: 50%;
+        justify-content: space-around;
+        list-style: none;
+        justify-items: center;
+        /*padding: 25px 0;*/
+        margin: 20px ;
+      }
+    .lista a {
+        color: beige;
+        font-size: 2.2vh;
+        text-decoration: none;
+      }
+}

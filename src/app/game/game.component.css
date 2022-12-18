@@ -1,5 +1,9 @@
-.container {
+:root {
+  --fontsize: 25px;
+}
+.containerGame {
   width: 100%;
+  padding: 0 7vw;
 }
 .titleGame {
   margin: 1.2vw 1vw;
@@ -12,11 +16,11 @@
   width: 100%;
 }
 .info {
-  width: 60vw;
+  width: 65vw;
 }
 .data {
-    margin-top: 20vw;
-  width: 25vw;
+  margin-top: 0vw;
+  width: 35vw;
 }
 
 .screenshots {
@@ -30,19 +34,83 @@
 .description {
   margin: 0.5vw 2vw;
 }
+.h4Text{
+  text-align: center;
+  margin-top: 1.5vw;
+}
+.hr{
+  margin: 20px 5vh;
+  height: 3px;
+  color: rgb(104, 104, 104);
+  border-radius: 3px;
+}
 
 /*Requerimientos*/
 .requerimientos {
   width: 100%;
+  padding: 0.5vw;
 }
 .requerimiento {
   display: flex;
-  margin: .5vw 0;
+  margin: 0.5vw 0;
 }
-.requerimiento > span{
+.requerimiento > span {
   width: 50%;
-  
+}
+.requerimiento :not(.dato) {
+  font-weight: 500;
 }
 .requerimiento > .dato {
   text-align: right;
+}
+.titleRequerimient {
+  text-align: center;
+  margin: 1vw 0;
+  font-size: 1.5vw;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 875px) {
+  .containerGame {
+    width: 100%;
+    padding: 0 3vw;
+  }
+  .info {
+    width: 65vw;
+  }
+  .data {
+    margin-top: 0vw;
+    width: 35vw;
+  }
+}
+@media screen and (max-width: 495px) {
+  .titleGame {
+    margin: 3vw 2vw;
+    text-align: center;
+  }
+  .screenshots {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .gameInformation {
+    display: block;
+    width: 98%;
+  }
+  .imgScrenshots {
+    width: 100%;
+    margin: 10px auto;
+  }
+  .info {
+    width: 100%;
+  }
+  .data {
+    margin-top: 10vw;
+    width: 100%;
+  }
+  .titleRequerimient {
+    text-align: center;
+    margin: 2vw 0;
+    font-size: 5vw;
+    font-weight: 500;
+  }
 }
