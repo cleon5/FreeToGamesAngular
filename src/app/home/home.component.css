@@ -1,0 +1,19 @@
+.top{
+
+}
+
+.recent{
+    justify-content: space-evenly;
+    width: 100%;
+    display: flex;
+    height: auto;
+}
+.elementRecent{
+    width: 30vw;
+    height: 20vw;
+}
+.elementRecent img{
+    background-size: cover;
+    width: auto;
+    height: 18vw;
+}

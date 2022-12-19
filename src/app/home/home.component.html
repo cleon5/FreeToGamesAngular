@@ -1,11 +1,6 @@
 <div>
   <app-navbar></app-navbar>
 
-  <button (click)="cargarDatos()">
-    ads
-  </button>
-
-
   <div class="top">
     <img src="" alt="">
     <h1>Encuentra los mejores juegos Free to play</h1>
@@ -13,9 +8,13 @@
   </div>
 
   <div class="recent">
-
+    <div *ngFor="let game of GamesRecent" class="elementRecent" [routerLink]="['/game/'+game.id]">
+      <img src="{{game.thumbnail}}" alt="">
+      <h3>{{game.title}}</h3>
+    </div>
   </div>
 
+  <hr>
   <div class="categorias">
     <div class="catSeccion">
       <h3>Mejores Exploracion</h3>
@@ -26,13 +25,13 @@
     <div class="catSeccion">
       <h3>Mejores Fps</h3>
       <div>
-        <!--app-slider-juegos [ArrayGames]=""></app-slider-juegos>-->
+        <app-slider-juegos [ArrayGames]="FpsGames"></app-slider-juegos>
       </div>
     </div>
     <div class="catSeccion">
       <h3>Populares en Windows</h3>
       <div>
-        <!--app-slider-juegos [ArrayGames]=""></app-slider-juegos>-->
+        <app-slider-juegos [ArrayGames]="WindowsGames"></app-slider-juegos>
       </div>
     </div>
 
