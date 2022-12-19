@@ -17,7 +17,7 @@ export class ListGamesComponent {
   }
 
   public cargarDatos(){
-    this.RestService.get("https://www.freetogame.com/api/games").subscribe(resp => {
+    this.RestService.get("https://free-to-play-games-database.p.rapidapi.com/api/games").subscribe(resp => {
       this.Games = resp;
       console.log(resp)
     })

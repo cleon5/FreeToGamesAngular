@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { RestService } from '../rest.service';
 
@@ -8,7 +8,7 @@ import { RestService } from '../rest.service';
   styleUrls: ['./slider-juegos.component.css']
 })
 export class SliderJuegosComponent implements OnInit {
-  ArrayGames = [523, 516, 508, 11, 380,  12, 511, 522, 455];
+  @Input() ArrayGames !: Array<number>;
   Games!:any;
   constructor(private readonly router: Router, private RestService: RestService){}
 
@@ -19,7 +19,7 @@ export class SliderJuegosComponent implements OnInit {
   loadGames(){
     this.Games = []
     this.ArrayGames.forEach(element => {
-      this.RestService.get("https://www.freetogame.com/api/game?id="+element).subscribe(resp => {
+      this.RestService.get("https://free-to-play-games-database.p.rapidapi.com/api/game?id="+element).subscribe(resp => {
         this.Games.push(resp);
         console.log(this.Games)
       })

@@ -1,16 +1,19 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class RestService {
+  constructor(private http: HttpClient) {}
 
-  constructor(private http: HttpClient) { }
+  public get(url: string) {
+    const headers = new HttpHeaders({
+      'X-RapidAPI-Key': 'cb467d16f3msh3f8fb60e3b94a3dp12b1b8jsn48209caee58e',
+      'X-RapidAPI-Host': 'free-to-play-games-database.p.rapidapi.com'
 
-  public get(url:string){
-    return this.http.get(url);
+    });
+
+    return this.http.get(url, {headers:headers});
   }
-
-  
 }

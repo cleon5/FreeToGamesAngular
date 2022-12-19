@@ -1,7 +1,7 @@
 <div>
     <app-navbar></app-navbar>
 
-    <div class="containerGame">
+    <div *ngIf="!carga" class="containerGame">
         <div class="titleGame">
             <h1>{{Game.title}}</h1>
 
@@ -107,12 +107,15 @@
         </div>
 
 
-
+        <div>
+            <hr class="hr">
+            <h4 class="h4Text">Juegos similares</h4>
+            <app-slider-juegos [ArrayGames]="Gameslider"></app-slider-juegos>
+        </div>
 
     </div>
-    <div>
-        <hr class="hr">
-        <h4 class="h4Text">Juegos similares</h4>
-        <app-slider-juegos></app-slider-juegos>
-    </div>
+
+    <div *ngIf="carga" class="loader">
+        <app-loader></app-loader>
+      </div>
     <app-footer></app-footer>

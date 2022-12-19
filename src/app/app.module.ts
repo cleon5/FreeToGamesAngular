@@ -10,6 +10,7 @@ import { ListGamesComponent } from './list-games/list-games.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SliderJuegosComponent } from './slider-juegos/slider-juegos.component';
 import { FooterComponent } from './footer/footer.component';
+import { LoaderComponent } from './loader/loader.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { FooterComponent } from './footer/footer.component';
     ListGamesComponent,
     NavbarComponent,
     SliderJuegosComponent,
-    FooterComponent
+    FooterComponent,
+    LoaderComponent
   ],
   imports: [
     BrowserModule,
