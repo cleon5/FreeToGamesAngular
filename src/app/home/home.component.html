@@ -1,10 +1,14 @@
-<div>
+<div class="home">
   <app-navbar></app-navbar>
 
   <div class="top">
-    <img src="" alt="">
-    <h1>Encuentra los mejores juegos Free to play</h1>
-    <h2>Mas de 500 juegos de diversos generos</h2>
+    <div class="imgContainer">
+       <img src="../../assets/control.jpg" alt="" class="imgTop">
+    </div>
+    <div class="titleContainer">
+      <h1>Encuentra los mejores juegos Free to play</h1>
+      <h2>Mas de 500 juegos de diversos generos</h2>
+    </div>
   </div>
 
   <div class="recent">
@@ -13,7 +17,7 @@
       <h3>{{game.title}}</h3>
     </div>
   </div>
-
+  
   <hr>
   <div class="categorias">
     <div class="catSeccion">
@@ -36,4 +40,5 @@
     </div>
 
   </div>
+  <app-footer></app-footer>
 </div>

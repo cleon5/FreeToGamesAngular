@@ -1,14 +1,47 @@
-<div>
+<div class="pageGamesList">
     <app-navbar></app-navbar>
 
     <div class="ListaGamesTitulo">
         <h1>Lista de juegos</h1> 
+        <button class="btn btn-primary" (click)="filtrar = !filtrar">Filtrar</button>
     </div>
 
+    <div class="filter"  *ngIf="filtrar">
+        <div class="select">
+            <label for="Plataforma">Plataforma</label>
+            <select class="form-select" aria-label="Default select example" (change)="capturar()" [(ngModel)]="plataforma">
+                <option selected>Plataforma</option>
+                <option value="pc">Pc</option>
+                <option value="Xbox">Xbox</option>
+                <option value="all">All</option>
+            </select>
+        </div>
+        <div class="select">
+            <label for="Genero">Genero</label>
+            <select class="form-select" (change)="capturar()" [(ngModel)]="genero">
+                <option selected>Genero</option>
+                <option value="shooter">shooter</option>
+                <option value="pvp">pvp</option>
+                <option value="mmorpg">mmorpg</option>
+            </select>
+        </div>
+        
+        <div class="select">
+            <label for="order">Ordenar por:</label>
+            <select class="form-select" (change)="capturar()" [(ngModel)]="orden">
+                <option selected>Open this select menu</option>
+                <option value="release-date">release-date</option>
+                <option value="alphabetical">alphabetical</option>
+                <option value="relevance<">relevance</option>
+            </select>
+        
+        </div>
+    </div>
+    
     <div class="list">
         <ul class="listaGames">
             <li *ngFor="let game of Games" class="gameItem" [routerLink]="['/game/'+game.id]">
-                <img src="{{game.thumbnail}}"  alt="">
+                <img src="{{game.thumbnail}}" >
                 <h3 class="titleGame">{{game.title}}</h3>
             </li>
         </ul>

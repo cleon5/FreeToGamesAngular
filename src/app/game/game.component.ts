@@ -30,6 +30,7 @@ export class GameComponent implements OnInit {
 
   public loadGame() {
     this.RestService.get(
+      
       'https://free-to-play-games-database.p.rapidapi.com/api/game?id=' + this.id
     ).subscribe((resp) => {
       this.Game = resp;

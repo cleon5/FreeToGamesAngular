@@ -1,19 +1,53 @@
-.top{
-
+.top {
+  width: 100%;
+  align-items: center;
+}
+.titleContainer {
+  color: white;
+  position: relative;
+  text-align: center;
+  top: -500px;
+}
+.titleContainer h1 {
+  font-size: 4vw;
+}
+.home {
+  background-color: rgb(50, 51, 51);
+  color: white;
 }
 
-.recent{
-    justify-content: space-evenly;
-    width: 100%;
-    display: flex;
-    height: auto;
+.recent {
+  justify-content: space-evenly;
+  width: 100%;
+  display: flex;
+  height: auto;
 }
-.elementRecent{
-    width: 30vw;
-    height: 20vw;
+.recent h3 {
+  padding: 10px;
+  text-align: center;
 }
-.elementRecent img{
-    background-size: cover;
-    width: auto;
-    height: 18vw;
+.elementRecent {
+  width: 30vw;
+  height: 20vw;
+}
+.elementRecent img {
+  background-size: cover;
+  width: 100%;
+  height: 18vw;
+  border-radius: 10px;
+box-shadow: 1px 8px 14px 7px #000000;
+}
+.imgContainer {
+  margin: 0px 0% 0px 0%;
+  width: 100%;
+  height: 40vw;
+}
+.catSeccion h3 {
+  
+    margin: 20px;
+}
+.imgTop {
+  width: 100%;
+  height: auto;
+  background-size: cover;
 }

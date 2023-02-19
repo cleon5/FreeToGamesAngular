@@ -1,9 +1,18 @@
+.pageGamesList{
+  background-color: rgb(50, 51, 51);
+  color: white;
+}
 .list {
   width: 100%;
 }
 .ListaGamesTitulo{
     margin: 50px auto;
     text-align: center;
+    justify-content: center;
+}
+.ListaGamesTitulo button{
+  text-align: end;
+  justify-content: flex-end;
 }
 .listaGames {
   justify-content: center;
@@ -15,4 +24,20 @@
 .gameItem {
     margin-bottom: 10px;
   width: 30vw;
+  text-align: center;
+  
+}
+.gameItem img{
+  width: 95%;
+  border-radius: 10px;
+}
+.filter{
+  width: 100%;
+  margin: 25px 0;
+  display: flex;
+  justify-content: space-around;
+}
+.select{
+
+  width: 28vw;
 }
