@@ -63,9 +63,14 @@ button {
   }
   .select {
     width: 28vw;
+  }  
+  .pageGamesList{
+    min-height: 80vh;
   }
 }
 @media screen and (max-width: 495px) {
+
+  
   .ListaGamesTitulo {
     margin: 15px auto;
   }
