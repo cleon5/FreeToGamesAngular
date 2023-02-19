@@ -109,6 +109,7 @@
   .gameInformation {
     display: block;
     width: 98%;
+    
   }
   .imgScrenshots {
     width: 100%;
@@ -126,5 +127,11 @@
     margin: 2vw 0;
     font-size: 5vw;
     font-weight: 500;
+  }
+  @media screen and (max-width: 495px) {
+    .gameInformation{
+      display: flex;
+      flex-flow: row wrap-reverse;
+    }
   }
 }

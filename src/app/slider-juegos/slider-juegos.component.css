@@ -3,10 +3,13 @@
   overflow: auto;
   white-space: nowrap;
   margin: 15px 20px;
+  box-shadow: 10px 10px 56px 0px rgba(0,0,0,0.75);
 }
 .gameImg{
   border-radius: 10px;
   width: 98%;
+  box-shadow: 10px 10px 56px 0px rgba(0,0,0,0.75);
+  
 }
 .scrollmenu div {
   display: inline-block;

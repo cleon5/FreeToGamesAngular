@@ -9,30 +9,42 @@
     <div class="filter"  *ngIf="filtrar">
         <div class="select">
             <label for="Plataforma">Plataforma</label>
-            <select class="form-select" aria-label="Default select example" (change)="capturar()" [(ngModel)]="plataforma">
+            <select class="form-select form-select-sm" aria-label="Default select example" (change)="capturar()" [(ngModel)]="plataforma">
                 <option selected>Plataforma</option>
                 <option value="pc">Pc</option>
-                <option value="Xbox">Xbox</option>
+                <option value="browser">Browser</option>
                 <option value="all">All</option>
             </select>
         </div>
-        <div class="select">
+        <div class="select ">
             <label for="Genero">Genero</label>
-            <select class="form-select" (change)="capturar()" [(ngModel)]="genero">
-                <option selected>Genero</option>
-                <option value="shooter">shooter</option>
-                <option value="pvp">pvp</option>
-                <option value="mmorpg">mmorpg</option>
+            <select class="form-select form-select-sm "  (change)="capturar()" [(ngModel)]="genero">
+                <option selected>Categoria</option>
+                <option value="anime">Anime</option>
+                <option value="strategy">Strategy</option>
+                <option value="shooter">Shooter</option>
+                <option value="sci-fi">Sci-Fi</option>
+                <option value="racing">Racing</option>
+                <option value="social">Social</option>
+                <option value="sports">Sports</option>
+                <option value="moba">Moba</option>
+                <option value="sandbox">SandBox</option>
+                <option value="open-world">Open world</option>
+                <option value="pvp">Pvp</option>
+                <option value="mmorpg">Mmorpg</option>
+                <option value="fantasy">Fantasy</option>
+                <option value="voxel">Voxel</option>
+                <option value="pixel">Pixel</option>
             </select>
         </div>
         
         <div class="select">
             <label for="order">Ordenar por:</label>
-            <select class="form-select" (change)="capturar()" [(ngModel)]="orden">
-                <option selected>Open this select menu</option>
-                <option value="release-date">release-date</option>
-                <option value="alphabetical">alphabetical</option>
-                <option value="relevance<">relevance</option>
+            <select class="form-select form-select-sm" (change)="capturar()" [(ngModel)]="orden">
+                <option selected>Orden</option>
+                <option value="release-date">Release-date</option>
+                <option value="alphabetical">Alphabetical</option>
+                <option value="popularity<">Popularity</option>
             </select>
         
         </div>
